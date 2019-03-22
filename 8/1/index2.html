@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Fruit List</title>
+<script>
+var fn=0;
+function mod(x){
+	fn+=x;
+	var dis="Total cost of the fruit: "+x+"\nTax: "+.05*x+"\nTotal including the tax: "+1.05*x
+	alert(dis);	
+	}
+function final(){
+	var dis="Total Cost: "+fn+"\nTax: "+.05*fn+"\nTotal including the tax: "+1.05*fn
+	alert(dis)
+}
+function loader(){
+document.getElementsByTagName("input")[0].setAttribute("onclick","mod((this.checked?1:-1)*59)");
+document.getElementsByTagName("input")[1].setAttribute("onclick","mod((this.checked?1:-1)*49)");
+document.getElementsByTagName("input")[2].setAttribute("onclick","mod((this.checked?1:-1)*39)");
+}
+document.onload=setTimeout(function(){loader()},1000);
+</script>
+</head>
+<body>
+<center>Fruit List</center>
+<form>
+<input type="checkbox">Apple </input><br>
+<input type="checkbox">Orange </input><br>
+<input type="checkbox">Banana </input>
+<br>
+<br>
+<input type="submit" value="Find Total" onclick="final()"></input>
+</form>
+<p id="cost">
+</p>
+</body>
+</html>

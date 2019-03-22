@@ -1,0 +1,65 @@
+<html>
+<head><title>Fruit List</title></head>
+<body>
+<center>Fruit List</center>
+<form id="apple" action="cost()">
+<input type="checkbox" value="Apple" onclick="add1(59)">Apple<br>
+<input type="checkbox" value="Orange" onclick="add2(49)">Orange<br> 
+<input type="checkbox" value="Banana" onclick="add3(39)">Banana<br>
+<br>
+<input type="button" value="Find Total" onclick="sum()">
+</form>
+<script type="text/javascript">
+total=0;
+flag1=0;
+flag2=0;
+flag3=0;
+function sum()
+{
+alert(total);
+}
+function add1(temp)
+{
+if(flag1%2==0)
+{
+total+=temp+(temp*0.05);
+temp1=temp+(temp*0.05);
+alert("Total cost is "+total+" cents and the cost of the fruit is "+temp1+"cents inclusive of taxes.");
+}
+else
+{
+total-=temp+(temp*0.05);
+}
+flag1++;
+}
+function add2(temp)
+{
+if(flag2%2==0)
+{
+total+=temp+(temp*0.05);
+temp1=temp+(temp*0.05);
+alert("Total cost is "+total+" cents and the cost of the fruit is "+temp1+"cents inclusive of taxes.");
+}
+else
+{
+total-=temp+(temp*0.05);
+}
+flag2++;
+}
+function add3(temp)
+{
+if(flag3%2==0)
+{
+total+=temp+(temp*0.05);
+temp1=temp+(temp*0.05);
+alert("Total cost is "+total+" cents and the cost of the fruit is "+temp1+"cents inclusive of taxes.");
+}
+else
+{
+total-=temp+(temp*0.05);
+}
+flag3++;
+}
+</script>
+</body>
+</html>

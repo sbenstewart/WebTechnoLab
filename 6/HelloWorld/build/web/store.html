@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Enter details into  DB</title>
+    </head>
+    <body>
+    <center>
+        <h1>Upload to database</h1>
+        <form method="post" action="FileUploadDBServlet">
+            <table border="0">
+                <tr>
+                    <td>First name: </td>
+                    <td><input type="text" name="firstName" size="50" /></td>
+                </tr>
+                <tr>
+                    <td>Last name: </td>
+                    <td><input type="text" name="lastName" size="50" /></td>
+                </tr>
+                <tr>
+                    <td>Phone number: </td>
+                    <td><input type="number" name="Number" size="50" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="Submit" value="Upload">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    </body>
+</html>
