@@ -1,0 +1,16 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#div1").load("ajax_info.txt");
+});
+});
+</script>
+</head>
+<body>
+<div id="div1"><h2>Change content</h2></div>
+<button>Get Content</button>
+</body>
+</html>
